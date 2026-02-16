@@ -1,4 +1,5 @@
-from campers import registrar_camper
+from campers import registrar_camper 
+from campers import actualizar_estado
 usuarioCoordinador = "coordinadorcampus"
 contraseñaCoordinador = "campus123"
 refUno = True
@@ -25,19 +26,31 @@ while refUno == True :
                     print("---------------------------------Funcionalidades-------------------------------------")
                     print("1. Registro de estudiantes")
                     print("2. Asistencias")
-                    print("3. Asignación de horarios")
+                    print("3. Asignación de grupos")
                     print("4. Modificación de datos personales")
                     print("5. Sistema de puntos positivos y negativos")
                     print("6. Sistema de notas")
-                    print("7. Registrar a un estudiante como aprobado o no aprobado")
+                    print("7. Registrar a un estudiante como aprobado o inscrito")
                     print("8. Crear notas de entrenamiento en el ingreso")
                     print("9. Rutas de entrenamiento")
                     print("10. Reportes")
                     print("11. Salir a menu principal")
                     menuCoordinador = int(input("digite la funcionalidad a la que desea entrar: "))
                     if menuCoordinador == 1:
-                    #registrar_camper()
-                        numeroUno = input("Coloque numero")
+                        print("Sistema de registro de estudiantes")
+                        print("----------------------------------")
+                        registrar_camper()
+                    elif menuCoordinador == 2:
+                        print("Sistema de asistencias de campuslands")
+                    elif menuCoordinador == 3:
+                        print("Sistema de asignación de grupos")        
+                    elif menuCoordinador == 4:
+                        print("Sistema de modificacion de datos personales")
+                        print("-------------------------------------------")    
+                    elif menuCoordinador == 7:
+                        print("Cambio de estado")
+                        print("----------------")
+                        actualizar_estado()
                     elif menuCoordinador == 11:
                         refDos = False
     elif menuPrincipal == 2: 
@@ -64,4 +77,4 @@ while refUno == True :
         print("7. Procesos disciplinarios")
     elif menuPrincipal == 4:
         print("Gracias por navegar con nosotros")
-        refUno == False
+        refUno = False

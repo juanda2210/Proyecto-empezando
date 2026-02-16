@@ -29,6 +29,41 @@
             "direccion": "km2 ",
             "acudiente": "WIlson arias",
             "telefono_cel": "34234234",
+            "estado": "Aprobado",
+            "riesgo": "",
+            "notas": {}
+        },
+        {
+            "id": "874667456",
+            "nombre": "Camilo",
+            "apellido": "Nu\u00f1ez",
+            "direccion": "Brisas",
+            "acudiente": "Julian",
+            "telefono_cel": "5634354",
+            "estado": "Inscrito",
+            "riesgo": "",
+            "notas": {}
+        },
+        {
+            "id": "876453458",
+            "nombre": "Juan Pablo",
+            "apellido": "RAmirez",
+            "direccion": "La cumbre",
+            "acudiente": "Camilo",
+            "telefono_cel": "564354234",
+            "horario": "6 am a 2 pm",
+            "estado": "Inscrito",
+            "riesgo": "",
+            "notas": {}
+        },
+        {
+            "id": "324234234",
+            "nombre": "kfgmdfng",
+            "apellido": "ldkgfndlkfg",
+            "direccion": "lkgdlkfgn",
+            "acudiente": "dlfkgndlkfgn",
+            "telefono_cel": "56456345",
+            "horario": "10 am a 6 pm",
             "estado": "Inscrito",
             "riesgo": "",
             "notas": {}
