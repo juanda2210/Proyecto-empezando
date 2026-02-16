@@ -1,3 +1,4 @@
+from campers import registrar_camper
 usuarioCoordinador = "coordinadorcampus"
 contraseñaCoordinador = "campus123"
 refUno = True
@@ -10,28 +11,35 @@ while refUno == True :
     print("------------3. Trainer----------------")
     print("-------------4. Salir-----------------")
     print("")
-    menuPrincipal = input("Seleccione la opción con la que desea ingresar: ")
+    menuPrincipal = int(input("Seleccione la opción con la que desea ingresar: "))
 
     if menuPrincipal == 1:
         print("Bienvenido(a) al portal de Coordinador de Campuslands")
         print("-----------------------------------------------------")
-        print("")
         usuarioIngresado = input("Ingresa tu usuario: ")
         if (usuarioIngresado.strip().lower() == usuarioCoordinador.strip().lower()):
             contraseñaIngresada = input("Ingresa tu contraseña: ")
             if (contraseñaIngresada == contraseñaCoordinador):
-                print("-------Funcionalidades---------")
-                print("1. Registro de estudiantes")
-                print("2. Asistencias")
-                print("3. Asignación de horarios")
-                print("4. Modificación de datos personales")
-                print("5. Sistema de puntos positivos y negativos")
-                print("6. Sistema de notas")
-                print("7. Registrar a un estudiante como aprobado o no aprobado")
-                print("8. Crear notas de entrenamiento en el ingreso")
-                print("9. Rutas de entrenamiento")
-                print("10 Reportes")
-
+                refDos = True
+                while refDos == True:
+                    print("---------------------------------Funcionalidades-------------------------------------")
+                    print("1. Registro de estudiantes")
+                    print("2. Asistencias")
+                    print("3. Asignación de horarios")
+                    print("4. Modificación de datos personales")
+                    print("5. Sistema de puntos positivos y negativos")
+                    print("6. Sistema de notas")
+                    print("7. Registrar a un estudiante como aprobado o no aprobado")
+                    print("8. Crear notas de entrenamiento en el ingreso")
+                    print("9. Rutas de entrenamiento")
+                    print("10. Reportes")
+                    print("11. Salir a menu principal")
+                    menuCoordinador = int(input("digite la funcionalidad a la que desea entrar: "))
+                    if menuCoordinador == 1:
+                    #registrar_camper()
+                        numeroUno = input("Coloque numero")
+                    elif menuCoordinador == 11:
+                        refDos = False
     elif menuPrincipal == 2: 
         print("Bienvenido(a) al portal de camper de Campuslands")
         print("------------------------------------------------")
@@ -54,3 +62,6 @@ while refUno == True :
         print("5. Revisar datos generales de los campers")
         print("6. Asistencia en la parte académica")
         print("7. Procesos disciplinarios")
+    elif menuPrincipal == 4:
+        print("Gracias por navegar con nosotros")
+        refUno == False
