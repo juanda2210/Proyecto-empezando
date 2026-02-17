@@ -1,6 +1,9 @@
 from campers import registrar_camper 
 from campers import actualizar_estado
 from campers import actualizar_informacion
+from campers import usu_contra
+from trainers import registrar_trainer
+from trainers import usuario_contrasena
 usuarioCoordinador = "coordinadorcampus"
 contraseñaCoordinador = "campus123"
 refUno = True
@@ -26,34 +29,54 @@ while refUno == True :
                 while refDos == True:
                     print("---------------------------------Funcionalidades-------------------------------------")
                     print("1. Registro de estudiantes")
-                    print("2. Asistencias")
-                    print("3. Asignación de grupos")
-                    print("4. Modificación de datos personales")
-                    print("5. Sistema de puntos positivos y negativos")
-                    print("6. Sistema de notas")
-                    print("7. Registrar a un estudiante como aprobado o inscrito")
-                    print("8. Crear notas de entrenamiento en el ingreso")
-                    print("9. Rutas de entrenamiento")
-                    print("10. Reportes")
-                    print("11. Salir a menu principal")
+                    print("2. Registro de trainers")
+                    print("3. Asistencias")
+                    print("4. Asignación de grupos")
+                    print("5. Modificación de datos personales")
+                    print("6. Sistema de puntos positivos y negativos")
+                    print("7. Sistema de notas")
+                    print("8. Registrar a un estudiante como aprobado o inscrito")
+                    print("9. Crear notas de entrenamiento en el ingreso")
+                    print("10. Rutas de entrenamiento")
+                    print("11. Reportes")
+                    print("12. Asignar correos y contraseñas")
+                    print("13. Salir a menu principal")
                     menuCoordinador = int(input("digite la funcionalidad a la que desea entrar: "))
                     if menuCoordinador == 1:
                         print("Sistema de registro de estudiantes")
                         print("----------------------------------")
                         registrar_camper()
                     elif menuCoordinador == 2:
-                        print("Sistema de asistencias de campuslands")
+                        print("Sistema de registro de trainer")
+                        registrar_trainer()
                     elif menuCoordinador == 3:
-                        print("Sistema de asignación de grupos")        
+                        print("Sistema de asistencias de campuslands")
                     elif menuCoordinador == 4:
+                        print("Sistema de asignación de grupos")        
+                    elif menuCoordinador == 5:
                         print("Sistema de modificacion de datos personales")
                         print("-------------------------------------------")
                         actualizar_informacion()
-                    elif menuCoordinador == 7:
+                    elif menuCoordinador == 8:
                         print("Cambio de estado")
                         print("----------------")
                         actualizar_estado()
-                    elif menuCoordinador == 11:
+                    elif menuCoordinador == 12:
+                        menuDeAsignacionDeCorreos = True
+                        while menuDeAsignacionDeCorreos == True:
+                            print(".\Menu de asignacion de correos y contraseñas")
+                            print("-------------------------------------------")
+                            print("1. campers")
+                            print("2. trainers")
+                            print("3. salir a menu de coordina1dor")
+                            opcion = int(input(": "))
+                            if opcion == 1: 
+                                usu_contra()
+                            elif opcion == 2:
+                                usuario_contrasena()
+                            elif opcion == 3:
+                                menuDeAsignacionDeCorreos = False        
+                    elif menuCoordinador == 13:
                         refDos = False
     elif menuPrincipal == 2: 
         print("Bienvenido(a) al portal de camper de Campuslands")

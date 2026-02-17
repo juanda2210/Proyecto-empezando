@@ -15,12 +15,14 @@
             "id": "8645343",
             "nombre": "Ruben",
             "apellido": "Carreno",
-            "direccion": "Las palmas",
+            "direccion": "cacique",
             "acudiente": "Israel",
             "telefono_cel": "76534",
             "estado": "Inscrito",
             "riesgo": "",
-            "notas": {}
+            "notas": {},
+            "usuario": "ruben123",
+            "contrasena": "ruben12"
         },
         {
             "id": "94865487",
@@ -69,6 +71,16 @@
             "notas": {}
         }
     ],
-    "trainers": [],
+    "trainers": [
+        {
+            "id": "65432",
+            "nombre": "Pedro",
+            "apellido": "Gomez",
+            "rutas": "Java",
+            "usuario": "pedrito456",
+            "contrase\u00f1a": "amolosperros.654",
+            "horario": ""
+        }
+    ],
     "rutas": []
 }

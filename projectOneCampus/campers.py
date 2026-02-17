@@ -22,6 +22,8 @@ def registrar_camper ():
         "horario" : horario,
         "estado" : "Inscrito",
         "riesgo" : "",
+        "usuario" : (""),
+        "contrasena": (""),
         "notas" : {}
     }
 
@@ -39,8 +41,7 @@ def actualizar_estado():
             camper["estado"] = "Aprobado"
 
     save_data(data)
-    print("")
-    print("Estado actualizado correctamente")
+    print(".\Estado actualizado correctamente")
 
 def actualizar_informacion():
     data = load_data()
@@ -82,4 +83,19 @@ def actualizar_informacion():
                 
     save_data(data)
     print("\nDato actualizado correctamente")    
+def usu_contra():
+    data = load_data()
+
+    buscarID = input("Numero de documento de identidad: ")
+    
+    for campers in data["campers"]:
+        if campers["id"] == buscarID:
+            usuario = input("usuario: ")
+            contrasena = input("contraseña: ")
+            campers["usuario"] = usuario
+            campers["contrasena"] = contrasena
+ 
+    save_data(data)
+    print("\nusuario y contraseña guardados exitosamente")
             
+
