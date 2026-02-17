@@ -76,10 +76,10 @@
             "id": "65432",
             "nombre": "Pedro",
             "apellido": "Gomez",
-            "rutas": "Java",
+            "rutas": ["Java", "NodeJS"],
             "usuario": "pedrito456",
             "contrase\u00f1a": "amolosperros.654",
-            "horario": ""
+            "horario": ["6 am a 10 am", "10 am a 2 pm", "2pm a 6 pm"]
         }
     ],
     "rutas": []
