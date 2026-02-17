@@ -6,12 +6,15 @@ def registrar_camper ():
     print("---------------------")
     print("1. 6 am a 2 pm")
     print("2. 10 am a 6 pm")
+    print("3. 2 pm a 10 pm")
     print("")
     seleccion = int(input(": "))
     if seleccion == 1:
         horario = "6 am a 2 pm"
     elif seleccion == 2:
         horario = "10 am a 6 pm"    
+    elif seleccion == 3:
+        horario = "2 pm a 6 pm"    
     camper = {
         "id" : input("ID: "),
         "nombre" : input("Nombre: "),
