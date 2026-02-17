@@ -40,4 +40,46 @@ def actualizar_estado():
 
     save_data(data)
     print("")
-    print("Estado actualizado correctamente")        
+    print("Estado actualizado correctamente")
+
+def actualizar_informacion():
+    data = load_data()
+    buscarID = input("Ingrese el ID del camper: ")
+
+    for camper in data["campers"]:
+        if camper["id"] == buscarID:
+
+            print("\n¿Qué dato desea actualizar?")
+            print("1. Nombre")
+            print("2. Apellido")
+            print("3. Dirección")
+            print("4. Acudiente")
+            print("5. Teléfono")
+            print("6. Horario")
+
+            opcion = int(input("Seleccione una opción: "))
+            
+            if opcion == 1:
+                camper["nombre"] = input("Nuevo nombre: ")
+            elif opcion == 2:
+                camper["apellido"] = input("Nuevo apellido: ")
+            elif opcion == 3:
+                camper["direccion"] = input("Nueva dirección: ")
+            elif opcion == 4:
+                camper["acudiente"] = input("Nuevo acudiente: ")
+            elif opcion == 5:
+                camper["telefono_cel"] = input("Nuevo teléfono: ")
+            elif opcion == 6:
+                print("Seleccione nuevo horario")
+                print("1. 6 am a 2 pm")
+                print("2. 10 am a 6 pm")
+                seleccion = int(input(": "))
+
+                if seleccion == 1:
+                    camper["horario"] = "6 am a 2 pm"
+                elif seleccion == 2:
+                    camper["horario"] = "10 am a 6 pm"
+                
+    save_data(data)
+    print("\nDato actualizado correctamente")    
+            

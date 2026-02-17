@@ -1,5 +1,6 @@
 from campers import registrar_camper 
 from campers import actualizar_estado
+from campers import actualizar_informacion
 usuarioCoordinador = "coordinadorcampus"
 contraseñaCoordinador = "campus123"
 refUno = True
@@ -46,7 +47,8 @@ while refUno == True :
                         print("Sistema de asignación de grupos")        
                     elif menuCoordinador == 4:
                         print("Sistema de modificacion de datos personales")
-                        print("-------------------------------------------")    
+                        print("-------------------------------------------")
+                        actualizar_informacion()
                     elif menuCoordinador == 7:
                         print("Cambio de estado")
                         print("----------------")
