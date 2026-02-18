@@ -83,9 +83,8 @@
             "usuario": "pedrito456",
             "contrase\u00f1a": "amolosperros.654",
             "horario": [
-                "6 am a 10 am",
-                "10 am a 2 pm",
-                "2pm a 6 pm"
+                "6 am a 2 pm",
+                "10 am a 6 pm"
             ]
         },
         {
@@ -93,45 +92,45 @@
             "nombre": "Kevin",
             "apellido": "AR",
             "rutas": "Java",
-            "usuario": "",
-            "contrasena": "",
-            "horario": "6 am a 2 pm"
+            "usuario": "KevinCampus",
+            "contrasena": "kevin123",
+            "horario": ["6 am a 2 pm"]
         },
         {
             "id": "654893",
             "nombre": "Edwin",
             "apellido": "tr",
             "rutas": "Netcore",
-            "usuario": "",
-            "contrasena": "",
-            "horario": "6 am a 2 pm"
+            "usuario": "EdwinCampus",
+            "contrasena": "Edwin123",
+            "horario": ["6 am a 2 pm"]
         },
         {
             "id": "869493",
             "nombre": "Cristian",
             "apellido": "jgi",
             "rutas": "NodeJS, Java",
-            "usuario": "",
-            "contrasena": "",
-            "horario": "10 am a 6 pm"
+            "usuario": "CristianCampus",
+            "contrasena": "Cristian123",
+            "horario": ["10 am a 6 pm"]
         },
         {
             "id": "65789",
             "nombre": "Carlos",
             "apellido": "ki",
             "rutas": "Java",
-            "usuario": "",
-            "contrasena": "",
-            "horario": "2 pm a 10 pm"
+            "usuario": "CarlosCampus",
+            "contrasena": "Carlos123",
+            "horario": ["2 pm a 10 pm"]
         },
         {
             "id": "6548095",
             "nombre": "Jholver",
             "apellido": "yu",
             "rutas": "Netcore",
-            "usuario": "",
-            "contrasena": "",
-            "horario": "6 am a 2 pm"
+            "usuario": "JholverCampus",
+            "contrasena": "Jholver123",
+            "horario": ["6 am a 2 pm"]
         }
     ],
     "rutas": []
