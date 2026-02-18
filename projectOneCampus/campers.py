@@ -27,7 +27,9 @@ def registrar_camper ():
         "riesgo" : "",
         "usuario" : (""),
         "contrasena": (""),
-        "notas" : {}
+        "notas" : {},
+        "grupo" : ""
+
     }
 
     data ["campers"].append(camper)
@@ -42,6 +44,15 @@ def actualizar_estado():
     for camper in data["campers"]:
         if camper["id"] == buscarID:
             camper["estado"] = "Aprobado"
+
+            for grupo in data["grupos"]:
+                if len(grupo["nombres"]) < 35:
+                    grupo["nombres"].append(camper["nombre"])
+                    grupo["apellidos"].append(camper["apellido"])
+                    grupo["id"].append(camper["id"])
+                    camper["grupo"] = grupo["titulo"]
+                    print("Camper agregado al grupo ",grupo["titulo"])
+                    break
 
     save_data(data)
     print(".\Estado actualizado correctamente")
@@ -99,6 +110,4 @@ def usu_contra():
             campers["contrasena"] = contrasena
  
     save_data(data)
-    print("\nusuario y contraseña guardados exitosamente")
-            
-
+    print("\nusuario y contraseña guardados exitosamente")           

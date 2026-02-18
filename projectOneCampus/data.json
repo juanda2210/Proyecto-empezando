@@ -18,11 +18,12 @@
             "direccion": "cacique",
             "acudiente": "Israel",
             "telefono_cel": "76534",
-            "estado": "Inscrito",
+            "estado": "Aprobado",
             "riesgo": "",
             "notas": {},
             "usuario": "ruben123",
-            "contrasena": "ruben12"
+            "contrasena": "ruben12",
+            "grupo": "p1"
         },
         {
             "id": "94865487",
@@ -86,6 +87,11 @@
                 "6 am a 10 am",
                 "10 am a 2 pm",
                 "2pm a 6 pm"
+            ],
+            "grupos": [
+                "p1",
+                "p2",
+                "p3"
             ]
         },
         {
@@ -95,7 +101,11 @@
             "rutas": "Java",
             "usuario": "",
             "contrasena": "",
-            "horario": "6 am a 2 pm"
+            "horario": "6 am a 2 pm",
+            "grupos": [
+                "k1",
+                "k2"
+            ]
         },
         {
             "id": "654893",
@@ -104,7 +114,11 @@
             "rutas": "Netcore",
             "usuario": "",
             "contrasena": "",
-            "horario": "6 am a 2 pm"
+            "horario": "6 am a 2 pm",
+            "grupos": [
+                "e1",
+                "e2"
+            ]
         },
         {
             "id": "869493",
@@ -113,7 +127,11 @@
             "rutas": "NodeJS, Java",
             "usuario": "",
             "contrasena": "",
-            "horario": "10 am a 6 pm"
+            "horario": "10 am a 6 pm",
+            "grupos": [
+                "c2",
+                "c3"
+            ]
         },
         {
             "id": "65789",
@@ -122,7 +140,11 @@
             "rutas": "Java",
             "usuario": "",
             "contrasena": "",
-            "horario": "2 pm a 10 pm"
+            "horario": "2 pm a 10 pm",
+            "grupos": [
+                "CR3",
+                "CR4"
+            ]
         },
         {
             "id": "6548095",
@@ -131,8 +153,97 @@
             "rutas": "Netcore",
             "usuario": "",
             "contrasena": "",
-            "horario": "6 am a 2 pm"
+            "horario": "6 am a 2 pm",
+            "grupos": [
+                "j1",
+                "j2"
+            ]
         }
     ],
-    "rutas": []
+    "grupos": [
+        {
+            "titulo": "p1",
+            "nombres": [
+                "Ruben"
+            ],
+            "apellidos": [
+                "Carreno"
+            ],
+            "id": [
+                "8645343"
+            ]
+        },
+        {
+            "titulo": "p2",
+            "nombres": [],
+            "apellidos": [],
+            "id": []
+        },
+        {
+            "titulo": "p3",
+            "nombres": [],
+            "apellidos": [],
+            "id": []
+        },
+        {
+            "titulo": "k1",
+            "nombres": [],
+            "apellidos": [],
+            "id": []
+        },
+        {
+            "titulo": "k2",
+            "nombres": [],
+            "apellidos": [],
+            "id": []
+        },
+        {
+            "titulo": "e1",
+            "nombres": [],
+            "apellidos": [],
+            "id": []
+        },
+        {
+            "titulo": "e2",
+            "nombres": [],
+            "apellidos": [],
+            "id": []
+        },
+        {
+            "titulo": "c2",
+            "nombres": [],
+            "apellidos": [],
+            "id": []
+        },
+        {
+            "titulo": "c3",
+            "nombres": [],
+            "apellidos": [],
+            "id": []
+        },
+        {
+            "titulo": "CR3",
+            "nombres": [],
+            "apellidos": [],
+            "id": []
+        },
+        {
+            "titulo": "CR4",
+            "nombres": [],
+            "apellidos": [],
+            "id": []
+        },
+        {
+            "titulo": "j1",
+            "nombres": [],
+            "apellidos": [],
+            "id": []
+        },
+        {
+            "titulo": "j2",
+            "nombres": [],
+            "apellidos": [],
+            "id": []
+        }
+    ]
 }

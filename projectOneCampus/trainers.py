@@ -24,6 +24,7 @@ def registrar_trainer():
         "usuario": (""),
         "contrasena" : (""),
         "horario": horario,              
+        "grupos" : input("Grupos: ")
     }
 
     data["trainers"].append(trainer)
