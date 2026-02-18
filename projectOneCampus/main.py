@@ -4,6 +4,11 @@ from campers import actualizar_informacion
 from campers import usu_contra
 from trainers import registrar_trainer
 from trainers import usuario_contrasena
+from asistencias import asistencia, eliminar_asistencia
+from asistencias import inasistencia, eliminar_inasistencia
+from asistencias import retardo, eliminar_retardo
+from asistencias import inasistencia_justificada, eliminar_inasistencia_justificada
+from puntos import puntos_positivos, puntos_negativos
 usuarioCoordinador = "coordinadorcampus"
 contraseñaCoordinador = "campus123"
 refUno = True
@@ -51,12 +56,48 @@ while refUno == True :
                         registrar_trainer()
                     elif menuCoordinador == 3:
                         print("Sistema de asistencias de campuslands")
+                        print("-------------------------------------")
+                        print("1. Registrar asistencia")
+                        print("2. Registrar inasistencia")
+                        print("3. Registrar retardo")
+                        print("4. Registrar inasistencia justificada")
+                        print("5. Eliminar asistencia")
+                        print("6. Eliminar inasistencia")
+                        print("7. Eliminar retardo")
+                        print("8. Eliminar inasistencia justificada")
+                        opcion = int(input(": "))
+                        if opcion == 1:
+                            asistencia()
+                        elif opcion == 2:
+                            inasistencia()
+                        elif opcion == 3:
+                            retardo()
+                        elif opcion == 4:
+                            inasistencia_justificada()
+                        elif opcion == 5:
+                            eliminar_asistencia()
+                        elif opcion == 6:
+                            eliminar_inasistencia()
+                        elif opcion == 7:
+                            eliminar_retardo()
+                        elif opcion == 8:
+                            eliminar_inasistencia_justificada()
                     elif menuCoordinador == 4:
                         print("Sistema de asignación de grupos")        
                     elif menuCoordinador == 5:
                         print("Sistema de modificacion de datos personales")
                         print("-------------------------------------------")
                         actualizar_informacion()
+                    elif menuCoordinador == 6:
+                        print("Sistema de puntos positivos y negativos")
+                        print("---------------------------------------")
+                        print("1. Digitar punto positivos")
+                        print("2. Digitar punto negativo")
+                        opcion = int(input(": "))
+                        if opcion == 1:
+                            puntos_positivos()
+                        elif opcion == 2:
+                            puntos_negativos()       
                     elif menuCoordinador == 8:
                         print("Cambio de estado")
                         print("----------------")
@@ -85,8 +126,7 @@ while refUno == True :
         print("----------------Funcionalidades-----------------")
         print("1. Revisar notas")
         print("2. Subir trabajos")
-        print("3. Realizar examenes")
-        print("4. Revisar el horario")
+        print("4. Revisar mis asistencias")
         print("5. Toma de asistencia")
     elif menuPrincipal == 3:
         print("Bienvenido(a) al portal de trainer de Campuslands")
