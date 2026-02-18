@@ -87,11 +87,6 @@
                 "6 am a 10 am",
                 "10 am a 2 pm",
                 "2pm a 6 pm"
-            ],
-            "grupos": [
-                "p1",
-                "p2",
-                "p3"
             ]
         },
         {
@@ -101,11 +96,7 @@
             "rutas": "Java",
             "usuario": "",
             "contrasena": "",
-            "horario": "6 am a 2 pm",
-            "grupos": [
-                "k1",
-                "k2"
-            ]
+            "horario": "6 am a 2 pm"
         },
         {
             "id": "654893",
@@ -114,11 +105,7 @@
             "rutas": "Netcore",
             "usuario": "",
             "contrasena": "",
-            "horario": "6 am a 2 pm",
-            "grupos": [
-                "e1",
-                "e2"
-            ]
+            "horario": "6 am a 2 pm"
         },
         {
             "id": "869493",
@@ -127,11 +114,7 @@
             "rutas": "NodeJS, Java",
             "usuario": "",
             "contrasena": "",
-            "horario": "10 am a 6 pm",
-            "grupos": [
-                "c2",
-                "c3"
-            ]
+            "horario": "10 am a 6 pm"
         },
         {
             "id": "65789",
@@ -140,11 +123,7 @@
             "rutas": "Java",
             "usuario": "",
             "contrasena": "",
-            "horario": "2 pm a 10 pm",
-            "grupos": [
-                "CR3",
-                "CR4"
-            ]
+            "horario": "2 pm a 10 pm"
         },
         {
             "id": "6548095",
@@ -153,11 +132,7 @@
             "rutas": "Netcore",
             "usuario": "",
             "contrasena": "",
-            "horario": "6 am a 2 pm",
-            "grupos": [
-                "j1",
-                "j2"
-            ]
+            "horario": "6 am a 2 pm"
         }
     ],
     "grupos": [
