@@ -1,7 +1,7 @@
 from data import load_data, save_data
 
 def puntos_positivos():
-    data = load_data
+    data = load_data()
 
     buscarID = input("Numero de documento del camper: ")
     for camper in data["campers"]:
@@ -13,7 +13,7 @@ def puntos_positivos():
     save_data(data)            
 
 def puntos_negativos():
-    data = load_data
+    data = load_data()
 
     buscarID = input("Numero de documento del camper: ")
     for camper in data["campers"]:
