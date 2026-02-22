@@ -45,3 +45,17 @@ def usuario_contrasena():
     
     save_data(data)
     print(".\Correo y contraseña guardados exitosamente")
+
+def login_trainer():
+    data = load_data()
+
+    usuario = input("Usuario: ")
+    contrasena = input("Contraseña: ")
+
+    for trainer in data["trainers"]:
+        if trainer.get("usuario") == usuario and trainer.get("contrasena") == contrasena:
+            print("Ingreso exitoso. Bienvenido", trainer["nombre"])
+            return trainer
+
+    print("Usuario o contraseña incorrectos.")
+    return None

@@ -3,7 +3,7 @@ from campers import actualizar_estado
 from campers import actualizar_informacion
 from campers import usu_contra
 from trainers import registrar_trainer
-from trainers import usuario_contrasena
+from trainers import usuario_contrasena, login_trainer
 from asistencias import asistencia, eliminar_asistencia
 from asistencias import inasistencia, eliminar_inasistencia
 from asistencias import retardo, eliminar_retardo
@@ -131,15 +131,22 @@ while refUno == True :
     elif menuPrincipal == 3:
         print("Bienvenido(a) al portal de trainer de Campuslands")
         print("-------------------------------------------------")
-        print("")
-        print("----------------Funcionalidades------------------")
-        print("1. Modificación de notas")
-        print("2. Subir material para trabajos")
-        print("3. Revisión de trabajos entregados por estudiantes")
-        print("4. Poner exámenes")
-        print("5. Revisar datos generales de los campers")
-        print("6. Asistencia en la parte académica")
-        print("7. Procesos disciplinarios")
+        trainer_logueado = login_trainer()
+        if trainer_logueado:
+            print("Acceso concedido al menú trainer")
+            print("Bienvenido(a) al portal de trainer de Campuslands")
+            print("-------------------------------------------------")
+            print("")
+            print("----------------Funcionalidades------------------")
+            print("1. Modificación de notas")
+            print("2. Subir material para trabajos")
+            print("3. Revisión de trabajos entregados por estudiantes")
+            print("4. Poner exámenes")
+            print("5. Revisar datos generales de los campers")
+            print("6. Asistencia en la parte académica")
+            print("7. Procesos disciplinarios")
+        else:
+            print("No se pudo iniciar sesión")
     elif menuPrincipal == 4:
         print("Gracias por navegar con nosotros")
         refUno = False
