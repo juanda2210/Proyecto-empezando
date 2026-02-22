@@ -1,9 +1,4 @@
-from campers import registrar_camper 
-from campers import actualizar_estado
-from campers import actualizar_informacion
-from campers import usu_contra
-from trainers import registrar_trainer
-from trainers import usuario_contrasena, login_trainer
+from campers import registrar_camper, actualizar_estado, actualizar_informacion, usu_contra, registrar_trainer, usuario_contrasena, login_trainer
 from asistencias import asistencia, eliminar_asistencia
 from asistencias import inasistencia, eliminar_inasistencia
 from asistencias import retardo, eliminar_retardo
@@ -120,14 +115,24 @@ while refUno == True :
                     elif menuCoordinador == 13:
                         refDos = False
     elif menuPrincipal == 2: 
-        print("Bienvenido(a) al portal de camper de Campuslands")
-        print("------------------------------------------------")
-        print("")
-        print("----------------Funcionalidades-----------------")
-        print("1. Revisar notas")
-        print("2. Subir trabajos")
-        print("4. Revisar mis asistencias")
-        print("5. Toma de asistencia")
+        print("Bienvenido(a) al portal de campers")
+        print("-----------------------------------")
+        camper_logueado = login_camper()
+        if camper_logueado:
+            print("Acceso concedido")
+            print("Nombre:", camper_logueado["nombre"])
+            print("Grupo:", camper_logueado.get("grupo"))
+            print("------------------------------------------------")
+            print("Bienvenido(a) al portal de camper de Campuslands")
+            print("------------------------------------------------")
+            print("")
+            print("----------------Funcionalidades-----------------")
+            print("1. Revisar notas")
+            print("2. Subir trabajos")
+            print("4. Revisar mis asistencias")
+            print("5. Toma de asistencia")
+        else:
+            print("No se pudo iniciar sesión")
     elif menuPrincipal == 3:
         print("Bienvenido(a) al portal de trainer de Campuslands")
         print("-------------------------------------------------")

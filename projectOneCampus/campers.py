@@ -97,6 +97,7 @@ def actualizar_informacion():
                 
     save_data(data)
     print("\nDato actualizado correctamente")    
+
 def usu_contra():
     data = load_data()
 
@@ -111,3 +112,17 @@ def usu_contra():
  
     save_data(data)
     print("\nusuario y contraseña guardados exitosamente")           
+
+def login_camper():
+    data = load_data()
+
+    usuario = input("Usuario: ")
+    contrasena = input("Contraseña: ")
+
+    for camper in data["campers"]:
+        if camper.get("usuario") == usuario and camper.get("contrasena") == contrasena:
+            print("Ingreso exitoso. Bienvenido", camper["nombre"])
+            return camper 
+
+    print("Usuario o contraseña incorrectos.")
+    return None
