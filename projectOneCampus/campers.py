@@ -127,3 +127,24 @@ def login_camper():
 
     print("Usuario o contraseña incorrectos.")
     return None
+
+def revisar_notas(camper):
+    print("\n----- MIS NOTAS -----\n")
+    print("Nombre:", camper["nombre"], camper["apellido"])
+    print()
+
+    print("Fundamentos de programación:", camper.get("nota_fundamentos_de_programacion", "Sin nota"))
+    print("Programación Web:", camper.get("nota_programacion_web", "Sin nota"))
+    print("Programación formal:", camper.get("nota_programacion_formal", "Sin nota"))
+    print("Bases de datos:", camper.get("nota_bases_de_datos", "Sin nota"))
+    print("Backend:", camper.get("nota_backend", "Sin nota"))
+
+def revisar_asistencias(camper):
+    print("\n----- MIS ASISTENCIAS -----\n")
+    print("Nombre:", camper["nombre"], camper["apellido"])
+    print()
+
+    print("Asistencias:", camper.get("asistencia", "sin asistencias"))
+    print("Programación Web:", camper.get("inasistencia", "sin inasistencias"))
+    print("Programación formal:", camper.get("retardo", "sin retardos"))
+    print("Bases de datos:", camper.get("inasistencia_justificada", "sin inasistencias justificadas"))

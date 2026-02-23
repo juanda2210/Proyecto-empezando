@@ -1,4 +1,4 @@
-from campers import registrar_camper, actualizar_estado, actualizar_informacion, usu_contra, login_camper
+from campers import registrar_camper, actualizar_estado, actualizar_informacion, usu_contra, login_camper, revisar_notas, revisar_asistencias
 from trainers import registrar_trainer, usuario_contrasena, login_trainer, asignar_notas, mostrar_estudiante
 from asistencias import asistencia, eliminar_asistencia
 from asistencias import inasistencia, eliminar_inasistencia
@@ -129,6 +129,12 @@ while refUno == True :
             print("----------------Funcionalidades-----------------")
             print("1. Revisar notas")
             print("2. Revisar mis asistencias")
+            print("-----------------------------")
+            refTres = int(input(": "))
+            if refTres == 1:
+                revisar_notas(camper_logueado)
+            elif refTres == 2:
+                revisar_asistencias(camper_logueado)
         else:
             print("No se pudo iniciar sesión")
     elif menuPrincipal == 3:
