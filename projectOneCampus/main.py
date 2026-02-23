@@ -1,5 +1,5 @@
 from campers import registrar_camper, actualizar_estado, actualizar_informacion, usu_contra, login_camper
-from trainers import registrar_trainer, usuario_contrasena, login_trainer
+from trainers import registrar_trainer, usuario_contrasena, login_trainer, asignar_notas, mostrar_estudiante
 from asistencias import asistencia, eliminar_asistencia
 from asistencias import inasistencia, eliminar_inasistencia
 from asistencias import retardo, eliminar_retardo
@@ -136,13 +136,21 @@ while refUno == True :
         print("-------------------------------------------------")
         trainer_logueado = login_trainer()
         if trainer_logueado:
-            print("Acceso concedido al menú trainer")
-            print("Bienvenido(a) al portal de trainer de Campuslands")
-            print("-------------------------------------------------")
-            print("")
-            print("----------------Funcionalidades------------------")
-            print("1. Modificación de notas")
-            print("2. Revisar datos generales de los campers")
+            refCuatro = True
+            while refCuatro == True:
+                print("Acceso concedido al menú trainer")
+                print("Bienvenido(a) al portal de trainer de Campuslands")
+                print("-------------------------------------------------")
+                print("")
+                print("----------------Funcionalidades------------------")
+                print("1. Modificación de notas")
+                print("2. Revisar datos generales de los campers")
+                print("-----------------------------------------")
+                opcion = int(input(": "))
+                if opcion == 1:
+                    asignar_notas(trainer_logueado)
+                elif opcion == 2:
+                    mostrar_estudiante()
         else:
             print("No se pudo iniciar sesión")
     elif menuPrincipal == 4:

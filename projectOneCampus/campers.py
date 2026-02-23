@@ -27,7 +27,6 @@ def registrar_camper ():
         "riesgo" : "",
         "usuario" : (""),
         "contrasena": (""),
-        "notas" : {},
         "grupo" : ""
 
     }
