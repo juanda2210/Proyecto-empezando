@@ -44,7 +44,6 @@ def actualizar_estado():
     for camper in data["campers"]:
         if camper["id"] == buscarID:
             camper["estado"] = "Aprobado"
-
             for grupo in data["grupos"]:
                 if len(grupo["nombres"]) < 35:
                     grupo["nombres"].append(camper["nombre"])
@@ -88,12 +87,15 @@ def actualizar_informacion():
                 print("Seleccione nuevo horario")
                 print("1. 6 am a 2 pm")
                 print("2. 10 am a 6 pm")
+                print("3. 2 pm a 6 pm")
                 seleccion = int(input(": "))
 
                 if seleccion == 1:
                     camper["horario"] = "6 am a 2 pm"
                 elif seleccion == 2:
                     camper["horario"] = "10 am a 6 pm"
+                elif seleccion == 3:
+                    camper["horario"] = "2 pm a 10 pm"
                 
     save_data(data)
     print("\nDato actualizado correctamente")    

@@ -32,16 +32,13 @@ while refUno == True :
                     print("1. Registro de estudiantes")
                     print("2. Registro de trainers")
                     print("3. Asistencias")
-                    print("4. Asignación de grupos")
-                    print("5. Modificación de datos personales")
-                    print("6. Sistema de puntos positivos y negativos")
-                    print("7. Sistema de notas")
-                    print("8. Registrar a un estudiante como aprobado o inscrito")
-                    print("9. Crear notas de entrenamiento en el ingreso")
-                    print("10. Rutas de entrenamiento")
-                    print("11. Reportes")
-                    print("12. Asignar correos y contraseñas")
-                    print("13. Salir a menu principal")
+                    print("4. Modificación de datos personales")
+                    print("5. Sistema de puntos positivos y negativos")
+                    print("6. Sistema de notas")
+                    print("7. Registrar a un estudiante como aprobado e ingreso a grupo")
+                    print("8. Reportes")
+                    print("9. Asignar correos y contraseñas")
+                    print("10. Salir a menu principal")
                     menuCoordinador = int(input("digite la funcionalidad a la que desea entrar: "))
                     if menuCoordinador == 1:
                         print("Sistema de registro de estudiantes")
@@ -77,14 +74,12 @@ while refUno == True :
                         elif opcion == 7:
                             eliminar_retardo()
                         elif opcion == 8:
-                            eliminar_inasistencia_justificada()
+                            eliminar_inasistencia_justificada()      
                     elif menuCoordinador == 4:
-                        print("Sistema de asignación de grupos")        
-                    elif menuCoordinador == 5:
                         print("Sistema de modificacion de datos personales")
                         print("-------------------------------------------")
                         actualizar_informacion()
-                    elif menuCoordinador == 6:
+                    elif menuCoordinador == 5:
                         print("Sistema de puntos positivos y negativos")
                         print("---------------------------------------")
                         print("1. Digitar punto positivos")
@@ -93,12 +88,16 @@ while refUno == True :
                         if opcion == 1:
                             puntos_positivos()
                         elif opcion == 2:
-                            puntos_negativos()       
-                    elif menuCoordinador == 8:
+                            puntos_negativos()    
+                    elif menuCoordinador == 6:
+                        print("Sistema de notas")   
+                    elif menuCoordinador == 7:
                         print("Cambio de estado")
                         print("----------------")
                         actualizar_estado()
-                    elif menuCoordinador == 12:
+                    elif menuCoordinador == 8:
+                        print("Sistema de reportes")
+                    elif menuCoordinador == 9:
                         menuDeAsignacionDeCorreos = True
                         while menuDeAsignacionDeCorreos == True:
                             print(".\Menu de asignacion de correos y contraseñas")
@@ -113,7 +112,7 @@ while refUno == True :
                                 usuario_contrasena()
                             elif opcion == 3:
                                 menuDeAsignacionDeCorreos = False        
-                    elif menuCoordinador == 13:
+                    elif menuCoordinador == 10:
                         refDos = False
     elif menuPrincipal == 2: 
         print("Bienvenido(a) al portal de campers")
@@ -129,9 +128,7 @@ while refUno == True :
             print("")
             print("----------------Funcionalidades-----------------")
             print("1. Revisar notas")
-            print("2. Subir trabajos")
-            print("4. Revisar mis asistencias")
-            print("5. Toma de asistencia")
+            print("2. Revisar mis asistencias")
         else:
             print("No se pudo iniciar sesión")
     elif menuPrincipal == 3:
@@ -145,12 +142,7 @@ while refUno == True :
             print("")
             print("----------------Funcionalidades------------------")
             print("1. Modificación de notas")
-            print("2. Subir material para trabajos")
-            print("3. Revisión de trabajos entregados por estudiantes")
-            print("4. Poner exámenes")
-            print("5. Revisar datos generales de los campers")
-            print("6. Asistencia en la parte académica")
-            print("7. Procesos disciplinarios")
+            print("2. Revisar datos generales de los campers")
         else:
             print("No se pudo iniciar sesión")
     elif menuPrincipal == 4:

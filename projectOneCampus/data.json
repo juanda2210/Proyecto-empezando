@@ -83,11 +83,8 @@
             ],
             "usuario": "pedrito456",
             "contrase\u00f1a": "amolosperros.654",
-            "horario": [
-                "6 am a 10 am",
-                "10 am a 2 pm",
-                "2pm a 6 pm"
-            ]
+            "horario": "6 am a 2 pm",
+            "grupos":["p1", "p2", "p3"]
         },
         {
             "id": "87696598",
@@ -96,7 +93,8 @@
             "rutas": "Java",
             "usuario": "",
             "contrasena": "",
-            "horario": "6 am a 2 pm"
+            "horario": "6 am a 2 pm",
+            "grupos":["k1", "k2"]
         },
         {
             "id": "654893",
@@ -105,7 +103,8 @@
             "rutas": "Netcore",
             "usuario": "",
             "contrasena": "",
-            "horario": "6 am a 2 pm"
+            "horario": "6 am a 2 pm",
+            "grupos":["e1", "e2"]
         },
         {
             "id": "869493",
@@ -114,7 +113,8 @@
             "rutas": "NodeJS, Java",
             "usuario": "",
             "contrasena": "",
-            "horario": "10 am a 6 pm"
+            "horario": "10 am a 6 pm",
+            "grupos": ["c2", "c3"]
         },
         {
             "id": "65789",
@@ -123,7 +123,8 @@
             "rutas": "Java",
             "usuario": "",
             "contrasena": "",
-            "horario": "2 pm a 10 pm"
+            "horario": "2 pm a 10 pm",
+            "grupos": ["ck3", "ck4"]
         },
         {
             "id": "6548095",
@@ -132,7 +133,8 @@
             "rutas": "Netcore",
             "usuario": "",
             "contrasena": "",
-            "horario": "6 am a 2 pm"
+            "horario": "6 am a 2 pm",
+            "grupos":["j1", "j2"]
         }
     ],
     "grupos": [
