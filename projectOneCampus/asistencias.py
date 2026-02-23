@@ -74,7 +74,7 @@ def eliminar_inasistencia():
         if camper["id"] == buscarID:
             if "inasistencia" not in camper:
                 print("El camper aun no tiene inasistencias")
-            else
+            else:
                 camper["inasistencia"] -= 1
         break
 
@@ -104,7 +104,7 @@ def eliminar_inasistencia_justificada():
         if camper["id"] == buscarID:
             if "justificada" not in camper:
                 print("El camper aun no tiene inasistencias justificadas")
-            else
+            else:
                 camper["justificada"] -= 1
         break
 

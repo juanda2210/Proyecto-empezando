@@ -1,4 +1,5 @@
-from campers import registrar_camper, actualizar_estado, actualizar_informacion, usu_contra, registrar_trainer, usuario_contrasena, login_trainer
+from campers import registrar_camper, actualizar_estado, actualizar_informacion, usu_contra, login_camper
+from trainers import registrar_trainer, usuario_contrasena, login_trainer
 from asistencias import asistencia, eliminar_asistencia
 from asistencias import inasistencia, eliminar_inasistencia
 from asistencias import retardo, eliminar_retardo
